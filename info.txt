@@ -1,0 +1,6 @@
+selected resource name:		pipeline1
+selected resource type:		pipeline
+factory name:			adfapmorganproject
+factory location:		eastus
+subscription id:		f3b639bf-7b9d-4aa6-aad9-8a3abc2a5e77
+time of download (UTC):		Wed, 20 Mar 2024 17:18:17 GMT
