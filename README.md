@@ -1,4 +1,4 @@
-Azure AP Morgan Data Platform Project
+AP Morgan Data Platform Project
 
  Overview
 
