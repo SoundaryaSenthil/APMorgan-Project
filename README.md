@@ -23,18 +23,18 @@ When new data arrived, we compared its schema with the source schema.
 Ensures that only unique files proceed to the staging area.
 Prevents redundant data processing and maintains data integrity.
 
--Tools and Technologies
+- Tools and Technologies
 
 The project utilizes various Azure services and tools to accomplish its objectives:
 
-  Azure Data Factory (ADF): ADF orchestrates and automates data workflows, including the ingestion of CSV files into ADLS and triggering validation processes.
+  1. Azure Data Factory (ADF): ADF orchestrates and automates data workflows, including the ingestion of CSV files into ADLS and triggering validation processes.
 
-  Databricks: Databricks provides a scalable data analytics platform for executing validation checks efficiently using Python or Scala notebooks.
+  2. Azure Databricks: Databricks provides a scalable data analytics platform for executing validation checks efficiently using Python or Scala notebooks.
 
-  Azure Data Lake Storage Gen2 (ADLS): ADLS serves as the storage repository for the incoming CSV files, providing a scalable and reliable storage solution for big data processing.
-  Azure SQL Server
-  SQL server Management Studio
-  Azure Key Vault: Key Vault securely stores and manages sensitive credentials, ensuring secure connections between Azure services, such as Databricks and Azure SQL.
+  3. Azure Data Lake Storage Gen2 (ADLS): ADLS serves as the storage repository for the incoming CSV files, providing a scalable and reliable storage solution for big data processing.
+  4. Azure SQL Server
+  5. SQL server Management Studio
+  6. Azure Key Vault: Key Vault securely stores and manages sensitive credentials, ensuring secure connections between Azure services, such as Databricks and Azure SQL.
 
 - Implementation
 
