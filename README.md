@@ -12,9 +12,19 @@ The Azure AP Morgan Data Platform Project is a sophisticated data processing sol
 
  Validation and Sorting: Upon arrival in ADLS, the CSV files undergo validation checks to ensure data quality. This includes verifying the filename against predefined criteria and validating the date formats within the files. Databricks notebooks are employed to execute these validation tasks efficiently.
 
+ Validation Process:
+When new data arrived, we compared its schema with the source schema.
+     -Check for duplicate rows. If it contains duplicate rows,file need to be rejected.
+     -Need to validate the date format for all the date fields.Date column names and desired date format is stored in Azure SQL server.If validations fails,file need to be rejected
+
+
  Folder Management: Based on the validation results, the files are sorted into distinct folders within ADLS. Files that pass validation are moved to the staging folder for further processing, while files that fail validation are redirected to the rejection folder for manual review and resolution. This folder management system ensures that only accurate and reliable data is processed further, while flagged data can be addressed separately.
 
- Tools and Technologies
+ Benefits:
+Ensures that only unique files proceed to the staging area.
+Prevents redundant data processing and maintains data integrity.
+
+Tools and Technologies
 
 The project utilizes various Azure services and tools to accomplish its objectives:
 
