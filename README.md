@@ -10,7 +10,7 @@ The Azure AP Morgan Data Platform Project is a sophisticated data processing sol
  
 - Data Ingestion: CSV files are received from an internal application and stored in Azure Data Lake Storage Gen2 (ADLS). This step involves establishing a reliable pipeline for transferring files from the application to the storage container.
 
- Validation and Sorting: Upon arrival in ADLS, the CSV files undergo validation checks to ensure data quality. This includes verifying the filename against predefined criteria and validating the date formats within the files. Databricks notebooks are employed to execute these validation tasks efficiently.
+- Validation and Sorting: Upon arrival in ADLS, the CSV files undergo validation checks to ensure data quality. This includes verifying the filename against predefined criteria and validating the date formats within the files. Databricks notebooks are employed to execute these validation tasks efficiently.
 
 - Validation Process:
 When new data arrived, we compared its schema with the source schema.
